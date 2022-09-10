@@ -1,9 +1,8 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,57 +17,57 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Login App"),
+          title: const Text("Login App"),
         ),
         body: SingleChildScrollView(
           child: Column(children: [
             Image.asset('images/logindemo.jpg'),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 35.0),
+              padding: const EdgeInsets.symmetric(horizontal: 35.0),
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 15.0,
                   ),
-                  Text(
+                  const Text(
                     "Log in Here",
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15.0,
                   ),
                   TextFormField(
-                    style: TextStyle(fontSize: 20),
-                    decoration: InputDecoration(
+                    style: const TextStyle(fontSize: 20),
+                    decoration: const InputDecoration(
                       labelText: "UserName",
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 18.0,
                   ),
                   TextFormField(
-                    style: TextStyle(fontSize: 20),
-                    decoration: InputDecoration(
+                    style: const TextStyle(fontSize: 20),
+                    decoration: const InputDecoration(
                       labelText: "Password",
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25.0,
                   ),
 
                   ElevatedButton(onPressed: (){},
-                   child: Text("Log in"),
                    style: ButtonStyle(
-                    padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 15,horizontal: 146)),
+                    padding: MaterialStateProperty.all(const EdgeInsets.symmetric(vertical: 15,horizontal: 146)),
                     textStyle: MaterialStateProperty.all(
-                      TextStyle(
+                      const TextStyle(
                         fontSize: 25
                       )
                     )
                    ),
+                   child: const Text("Log in"),
                    )
                 ],
               ),
